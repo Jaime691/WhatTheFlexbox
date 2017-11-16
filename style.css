@@ -3,7 +3,7 @@
 
 .box{
     color:white;
-    font-size: 100px;
+    font-size: 18px;
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -22,20 +22,9 @@
 
 .container{
     display: flex;
-}
+    justify-content: center;
+    flex-direction: column;
+    border: 10px solid mistyrose;
+    min-height: 100vh;
 
-.box{
-    flex: 1; /* Distributes uniformaly*/
-}
-
-.box3{
-    order: 1; /* By default al items have order 0*/
-}
-
-.box7{
-    order: 2; 
-}
-
-.box9{
-    order: -1; 
 }
