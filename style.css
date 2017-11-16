@@ -23,11 +23,12 @@
 .container{
     display: flex;
     border: 10px solid mistyrose;
-    align-items: baseline;
     height: 100vh;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* Align the main axis */
+    align-content: center; /* Align the cross axis */
 }
 
-.box4{
-    font-size: 18px;
+.box{
+    width: 33.333%
 }
