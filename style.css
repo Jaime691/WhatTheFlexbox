@@ -22,13 +22,20 @@
 
 .container{
     display: flex;
-    border: 10px solid gold;
-    height: 100vh; 
-    flex-wrap: wrap;
 }
 
 .box{
-    width: 33.3333333%;
-    /* padding: 10px; */
-    /* border: 10px solid mistyrose */
+    flex: 1; /* Distributes uniformaly*/
+}
+
+.box3{
+    order: 1; /* By default al items have order 0*/
+}
+
+.box7{
+    order: 2; 
+}
+
+.box9{
+    order: -1; 
 }
