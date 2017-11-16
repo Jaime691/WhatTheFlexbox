@@ -3,7 +3,7 @@
 
 .box{
     color:white;
-    font-size: 18px;
+    font-size: 100px;
     text-align: center;
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
@@ -22,9 +22,12 @@
 
 .container{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     border: 10px solid mistyrose;
-    min-height: 100vh;
+    align-items: baseline;
+    height: 100vh;
+    flex-direction: row;
+}
 
+.box4{
+    font-size: 18px;
 }
