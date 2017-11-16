@@ -1,0 +1,34 @@
+/* Box-sizing border-box */
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box}
+
+.box{
+    color:white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.box1{ background: #68bc1a}
+.box2{ background: #1abc42}
+.box3{ background: #1abc8b}
+.box4{ background: #1a9cbc}
+.box5{ background: #1a32bc}
+.box6{ background: #4b1abc}
+.box7{ background: #8e1abc}
+.box8{ background: #bc1a99}
+.box9{ background: #bc1a66}
+.box10{ background: #bc1a27}
+
+.container{
+    display: flex;
+    border: 10px solid gold;
+    height: 100vh; 
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 33.3333333%;
+    /* padding: 10px; */
+    /* border: 10px solid mistyrose */
+}
