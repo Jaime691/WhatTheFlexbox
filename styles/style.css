@@ -30,10 +30,31 @@ a:hover{
     background: rgba(0, 0, 0, 0.3);
 }
 
+.toggleNav{
+    display: none;
+}
+
+img{
+    width: 100%;
+}
 .wrapper{
     max-width: 1000px;
     margin: 0 auto;
-    padding: 50px;
+    /* padding: 50px; */
+}
+
+input{
+    padding: 10px;
+    border: 0;
+}
+
+section, footer{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+    color: white;
+    font-weight: 100;
 }
 
 .flex-nav ul{
@@ -69,5 +90,42 @@ a:hover{
 @media all and (max-width:500px){
     .flex-nav li{
         flex: 100%;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper > * {
+        order: 9999;
+    }
+
+    .flex-nav{
+        order: 1;
+    }
+
+    .toggleNav{
+        display: block;
+    }
+
+    .flex-nav ul{
+        display: none;
+    }
+
+    .flex-nav ul.open{
+        display: flex;
+    }
+
+    .top{
+        order: 2;
+    }
+
+    .details{
+        order:3;
+    }
+
+    .signup{
+        order:4;
     }
 }

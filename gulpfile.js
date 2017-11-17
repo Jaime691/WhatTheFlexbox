@@ -3,11 +3,11 @@ let autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('styles', function(){
-    gulp.src('./style.css')
+    gulp.src('./styles/style.css')
     .pipe(autoprefixer())
     .pipe(gulp.dest('build'))
 });
 
 gulp.task('watch', function(){
-    gulp.watch('./style.css',['styles'])
+    gulp.watch("./styles/style.css",['styles'])
 });
